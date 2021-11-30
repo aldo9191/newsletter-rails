@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  preference1: false
+  preference2: false
+  preference3: false
+
+two:
+  email: MyString
+  preference1: false
+  preference2: false
+  preference3: false
