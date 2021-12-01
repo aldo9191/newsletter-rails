@@ -1,9 +1,26 @@
 
-
-  <p>LOGO MICOLET</p>
+ <p>LOGO MICOLET - Aldo</p>
 
   <p> Welcome! Soon we will launch our site n this country</p>
 
-  <p> Suscribe to recieve our newsletter</p>
+  <p> Suscribe to recieve our newsletter 2</p>
 
+ <div >
+    <% if cookies[:saved_suscriber] %>
+        <p>Todo bien</p>
+    <%else %>
+      <%= form_for @suscriber do |f| %>
+        <%= f.email_field :email, placeholder: 'Email'  %>
+        <%= f.check_box(:preference1) %>
+        <%= label_tag(:preference1, "Women's Fashion") %>
+        <%= f.check_box(:preference2) %>
+        <%= label_tag(:preference2, "Men's Fashion") %>
+        <%= f.check_box(:preference3) %>
+        <%= label_tag(:preference3, "Children's Fashion") %>
+        <%= f.submit "Suscribe me" %>
+        
+      <%end%>
+    <% end %>
 
+      
+  </div>

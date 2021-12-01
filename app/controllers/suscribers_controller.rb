@@ -1,7 +1,6 @@
 class SuscribersController < ApplicationController
   def index
-    # "@suscriber = Suscriber.new"
-    puts "Holiii"
+    @suscriber = Suscriber.new
   end
 
   def create
