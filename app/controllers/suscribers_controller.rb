@@ -6,7 +6,7 @@ class SuscribersController < ApplicationController
   def create
     @suscriber = Suscriber.new(suscriber_params)
     if @suscriber.save
-      redirect_to root_path, notice: 'Thanks for subscribing!'
+      redirect_to root_path, notice: 'Thanks for suscribing!'
     else
       redirect_to root_path, notice: 'Error! Please try again.'
     end
