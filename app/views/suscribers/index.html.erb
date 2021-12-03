@@ -1,25 +1,33 @@
+<div class="center">
+  <div class="logo"></div>
+  <p class ='font-logo'>Almost new fashion with guarantee</p>
 
- <p>LOGO MICOLET - Aldo</p>
+  <p class= 'font-title-2'> Welcome! Soon we will launch our site in </br> this country</p>
 
-  <p> Welcome! Soon we will launch our site n this country</p>
-
-  <p> Suscribe to recieve our newsletter 2</p>
-
- <div >
+  <p class='font-title-3'> Suscribe to recieve our newsletter 2</p>
+</div>
+ <div class= "auto-align">
     <% if cookies[:saved_suscriber] %>
         <p>Todo bien</p>
     <%else %>
-      <%= form_for @suscriber do |f| %>
-        <%= f.email_field :email, placeholder: 'Email'  %>
+    
+      <%= form_for @suscriber do |f|%>
+      <div class="flex-container input"> 
+        <%= f.email_field :email, placeholder: 'Email' , class:'input'  %>
+        <div class="flex-row"> 
         <%= f.check_box(:preference1) %>
         <%= label_tag(:preference1, "Women's Fashion") %>
+        </div>
+        <div class="flex-row"> 
         <%= f.check_box(:preference2) %>
         <%= label_tag(:preference2, "Men's Fashion") %>
+        </div>
+        <div class="flex-row">
         <%= f.check_box(:preference3) %>
         <%= label_tag(:preference3, "Children's Fashion") %>
-        
+        </div>
         <%= f.submit "Suscribe me" %>
-        
+      </div>
       <%end%>
     <% end %>
 

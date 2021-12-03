@@ -1,0 +1,55 @@
+.logo {
+  background-image: url("micolet-logo.svg");
+  /* background-size: 200px; */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80px;
+}
+
+.font-logo {
+  color: #a2a6a9;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 10px;
+  padding: 0px;
+}
+
+.center {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.font-title-2 {
+  color: #000;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 60px;
+}
+
+.font-title-3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.input {
+  height:100px
+}
+
+.auto-align {
+  margin: 0 auto;
+  padding: 30px 200px;
+}

@@ -6,7 +6,7 @@ class Suscriber < ApplicationRecord
 
   def checked_preferences
     unless preference1 || preference2 || preference3
-      errors.add(:preference1, "You must select at least one preference")
+      errors.add("You must select at least one preference")
     end
   end
   
